@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Braintree Vault Payments Example</title>
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/custom.css'>
+  </head>
+  <body>
+    <div class='container'>
+
+      <div class="col-md-offset-1 col-md-5 col-xs-12 col-sm-6">
+        <p>A test user has been created on the Braintree with customer id <%= @custid %></p>
+        <p>The Vault token is <%= @token %></p>
+        <p>Transaction Complete, transaction id <%= @transaction %></p>
+      </div>
+
+      <div class="col-md-offset-1 col-md-5 col-xs-12 col-sm-6">
+        <%= params.ai(html: true, plain: true) %>
+      </div>
+
+    </div>
+  </body>
+</html>
